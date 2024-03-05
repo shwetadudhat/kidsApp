@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/kids_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:layout_weight="2.6"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="@dimen/Textsize50"
+                android:layout_height="@dimen/Textsize60"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/Textsize5"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_back" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/facebook"
+                android:layout_width="@dimen/Textsize50"
+                android:layout_height="@dimen/Textsize60"
+                android:padding="@dimen/Textsize5"
+                android:src="@drawable/facebook" />
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/btnRate"
+            android:layout_width="@dimen/Textsize50"
+            android:layout_height="@dimen/Textsize60"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/Textsize5"
+            android:src="@drawable/btn_rate" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/hlvCustomList"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Textsize220"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:weightSum="4"
+                android:id="@+id/container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_abc"
+                    android:layout_marginLeft="@dimen/Textsize15"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/menu_flashcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button1"
+                        android:id="@+id/button1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_onetwo"
+                    android:layout_marginLeft="@dimen/Textsize20"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/number_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button2"
+                        android:id="@+id/button2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quiz"
+                    android:layout_marginLeft="@dimen/Textsize20"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/quiz_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button3"
+                        android:id="@+id/button3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_match"
+                    android:layout_marginLeft="@dimen/Textsize20"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/match_card"
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Button4" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+           <!-- <LinearLayout
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:background="@drawable/bg_game2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/bg_game2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/bg_game2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/bg_game2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="@dimen/Textsize80"
+            android:paddingTop="@dimen/Textsize5"
+            android:paddingRight="@dimen/Textsize80"
+            android:paddingBottom="@dimen/Textsize5"
+            android:scaleX="-1.0">
+
+            <ImageView
+                android:id="@+id/prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_arrow_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/moreApps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:descendantFocusability="blocksDescendants"
+            android:paddingLeft="@dimen/Textsize80"
+            android:paddingTop="@dimen/Textsize5"
+            android:paddingRight="@dimen/Textsize80"
+            android:paddingBottom="@dimen/Textsize5">
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_arrow_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+  </LinearLayout>

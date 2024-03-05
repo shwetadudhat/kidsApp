@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llTop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_1"
+    tools:context=".Activity.AbcBoardView"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlTopTexture"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.75"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/btnHome"
+                android:layout_width="@dimen/Textsize50"
+                android:layout_height="@dimen/Textsize50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/Textsize5"
+                android:layout_marginTop="@dimen/Textsize5"
+                android:layout_marginEnd="@dimen/Textsize5"
+                android:layout_marginBottom="@dimen/Textsize5"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_home" />
+
+            <ImageView
+                android:id="@+id/btnLeft"
+                android:layout_width="@dimen/Textsize50"
+                android:layout_height="@dimen/Textsize50"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/Textsize20"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_arrow" />
+
+            <ImageView
+                android:id="@+id/btnRight"
+                android:layout_width="@dimen/Textsize50"
+                android:layout_height="@dimen/Textsize50"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/Textsize20"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:scaleX="-1.0"
+                android:src="@drawable/btn_arrow" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.25">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

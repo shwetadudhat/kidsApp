@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/llTop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/base_gradient1"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/Textsize5"
+    android:paddingBottom="@dimen/Textsize5">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/Textsize100"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:tag="clock"
+            android:id="@+id/img_thumb"
+            android:layout_width="@dimen/Textsize190"
+            android:layout_height="@dimen/Textsize190"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/a" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/Textsize100"
+        android:layout_alignParentRight="true"
+        android:gravity="center|right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_gravity="left"
+            android:tag="clock"
+            android:id="@+id/img_desc"
+            android:layout_width="@dimen/Textsize270"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/afor" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
